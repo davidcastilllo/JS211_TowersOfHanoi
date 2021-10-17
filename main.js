@@ -26,7 +26,7 @@ let stacks = {
 const printStacks = () => {
   console.log("a: " + stacks.a);
   console.log("b: " + stacks.b);
-  console.log("c: " + stacks.c);
+  console.log("c: " + stacks.c); 
 }
 
 // Next, what do you think this function should do?
@@ -58,8 +58,7 @@ else {return false}
 
 // When is this function called? What should it do with its argument?
 const towersOfHanoi = (startStack, endStack) => {
-  let ring = stacks['startStack'].sort().reverse().pop()
-  console.log(ring)
+  let ring = stacks[startStack].sort().reverse().pop()
   stacks[endStack].push(ring)
 }
 
